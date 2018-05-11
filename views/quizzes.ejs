@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lista de Quizzes</title>
+  </head>
+  <body>
+    <h3> Lista de Quizzes</h3>
+    <div id="lista">
+    	<ol>
+    		<% var quizzes = array %>
+    		<% var i %>
+    		<% for (i=0;i < quizzes.length;i++){ %>
+   				 <% var quiz = quizzes[i]; %>
+   				 <li>
+   				 	<%= quiz.question%> : <%=quiz.answer%>
+   				 </li>
+   			<% } %>
+   		</ol>
+    </div>
+  </body>
+</html>
